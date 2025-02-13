@@ -3,155 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Character Showcase</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+  <title>Saint Wilgeforts</title>
   <style>
     body {
-      font-family: 'Orbitron', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      overflow-x: hidden;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: linear-gradient(135deg, #111, #222);
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8);
-      border: 3px solid #ff00ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+      color: white;
+      flex-direction: column;
+      font-family: 'Garamond', serif;
       position: relative;
     }
-    h1 {
-      text-shadow: 0px 0px 10px #ff00ff, 0px 0px 20px #0ff;
-      font-family: 'Press Start 2P', cursive;
-      color: white;
-
-
-    }
-    h2 {
-      text-shadow: 0px 0px 10px #ff00ff;
-      font-family: 'Orbitron', sans-serif;
-      color: #fff;
-    }
-    p{
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 20px;
-    }
-
-    .attributes {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-    .attribute {
-      background: rgb(0, 0, 0);
-      padding: 15px;
-      border-radius: 10px;
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
       text-align: center;
+    }
+    .symbolic-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+    }
+    .hands-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 450px;
+      height: auto;
+      filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.7));
+    }
+    .quote {
+      font-size: 18px;
+      font-style: italic;
+      opacity: 0.8;
+      text-align: center;
+      margin-top: 20px;
+      width: 60%;
+    }
+    .enter-button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 18px;
       font-weight: bold;
-      border: 2px solid #ff00ff;
-      box-shadow: 0px 0px 5px #00ffff;
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 20px;
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      text-transform: uppercase;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     }
-    .attribute:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 0px 15px #ff00ff;
-    }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 5px #00ffff; }
-      50% { box-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff; }
-      100% { box-shadow: 0 0 5px #00ffff; }
-    }
-    .image-gallery img {
-      width: 290px;
-      height: 290px;
-      object-fit: cover;
-      margin: 5px;
-      border-radius: 5px;
-      border: 3px solid #ff00ff;
-    }
-    .songs-list li {
-      background: rgb(0, 0, 0);
-      padding: 15px;
-      margin: 20px 0;
-      border-radius: 5px;
-      font-weight: bold;
-      border: 2px solid #ff00ff;
-      box-shadow: 0px 0px 5px #00ffff;
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 20px;
+    .enter-button:hover {
+      background: white;
+      color: black;
     }
   </style>
 </head>
 <body>
-<div class="container">
-  <h1> Valentina's Character </h1>
-  <h2>Attributes </h2>
-  <div class="attributes">
-    <div class="attribute">Strength: 18</div>
-    <div class="attribute">Intelligence: 15</div>
-    <div class="attribute">Wisdom: 9</div>
-    <div class="attribute">Athletics: 13</div>
-    <div class="attribute">Deception: 8</div>
-    <div class="attribute">Investigation: 10</div>
-    <div class="attribute">Nature: 7</div>
-    <div class="attribute">Persuasion: 13</div>
-    <div class="attribute">Religion: 2</div>
-    <div class="attribute">Survival: 4</div>
-    <div class="attribute">Animal Handling: 18</div>
-  </div>
-  <div class="media-section">
-    <h2>🎵  Soundtrack 🎶</h2>
-    <ul class="songs-list">
-      <li>"Roar" - Katy Perry</li>
-      <li>"POWER" – Kanye West</li>
-      <li>"Master of None" - Beach House</li>
-      <li>"Drowning (feat. Kodak Black)" - A Boogie Wit da Hoodie</li>
-      <li>"SICKO MODE" – Travis Scott & Drake</li>
-      <li>"Ride" – Lana Del Rey</li>
-      <li>"Ma Meilleure Ennemie" – Stromae & Pomme</li>
-      <li>"Off to the Races" – Lana Del Rey</li>
-    </ul>
-  </div>
-  <div class="media-section">
-    <h2>📸 Gallery 🖼️</h2>
-    <div class="image-gallery">
-      <img src="img/1.jpg" alt="Cyber Character 1">
-      <img src="img/2.jpg" alt="Cyber Character 2">
-      <img src="img/4.jpg" alt="Cyber Character 3">
-      <img src="img/5.jpg" alt="Cyber Character 4">
-      <img src="img/6.jpg" alt="Cyber Character 5">
-
-    </div>
-  </div>
-  <div class="media-section">
-    <h2>Character Actors</h2>
-    <div class="image-gallery">
-      <img src="img/a.jpg" alt="Cyber Character 1">
-      <img src="img/b.jpg" alt="Cyber Character 2">
-      <img src="img/keanu.jpg" alt="Cyber Character 2">
-      <img src="img/img.png" alt="Cyber Character 2">
-    </div>
-  </div>
-  <div class="section">
-    <h3>Symbolism & Motifs</h3>
-    <p>Recurring imagery of mirrors and shadows represents the protagonist’s struggle between self identity and imposed identity. </p>
-  </div>
-  <div class="section">
-    <h3>Character Arc</h3>
-    <p>The protagonist begins as uncertain/compliant, gradually gaining the courage to challenge imposed expectations. Fighting for autonomy is part of this as well, and maybe even sovereignty if I decide to do a period piece.</p>
-  </div>
-  <div class="section">
-    <h3>Setting</h3>
-    <p>A rigid, traditional environment contrasts with liminal-like spaces such as alleyways, rooftops, or abandoned places where the protagonist finds moments of clarity and maybe rebellion.</p>
-  </div>
+<div class="symbolic-container">
+  <div class="title">Saint Wilgeforts</div>
+  <p class="quote">"The liberator, the disfigured, the divine. Where faith and resistance meet."</p>
+  <button class="enter-button" onclick="window.location.href='zineContent.html'">Enter the Zine</button>
 </div>
+<img src="img/handsfixed.png" alt="Praying Hands" class="hands-image">
 </body>
 </html>

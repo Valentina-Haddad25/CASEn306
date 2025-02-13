@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back Page</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: black;
+      color: white;
+      font-family: 'Garamond', serif;
+      position: relative;
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+    }
+    .zine-container {
+      width: 50%;
+      max-width: 800px;
+      padding: 30px;
+      border: 3px solid white;
+      text-align: center;
+      box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .content {
+      font-size: 22px;
+      line-height: 1.8;
+      text-align: center;
+      padding: 20px;
+    }
+    .cross {
+      position: relative;
+      width: 60px;
+      height: 100px;
+      margin-top: 20px;
+    }
+    .cross::before,
+    .cross::after {
+      content: "";
+      position: absolute;
+      background: white;
+    }
+    .cross::before {
+      width: 20px;
+      height: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .cross::after {
+      width: 60px;
+      height: 20px;
+      top: 30px;
+      left: 0;
+    }
+    .nav-button {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .nav-button:hover {
+      color: gray;
+    }
+    .back-button {
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="title">Thank You for Reading</div>
+<a href="WS.html" class="nav-button back-button">&#8592;</a>
+<div class="zine-container">
+  <div class="content">
+    <p>By:Valentina Haddad</p>
+  </div>
+</div>
+</body>
+</html>

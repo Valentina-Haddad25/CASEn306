@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Contents - Saint Wilgeforts Zine</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: 'Garamond', serif;
+            position: relative;
+        }
+        .zine-container {
+            width: 60%;
+            padding: 30px;
+            border: 3px solid white;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .contents {
+            font-size: 22px;
+            line-height: 1.8;
+        }
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 50px;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .nav-button:hover {
+            color: gray;
+        }
+        .back-button {
+            left: 50px;
+        }
+        .next-button {
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+<a href="index.html" class="nav-button back-button">&#8592;</a>
+<div class="zine-container">
+    <div class="title">Table of Contents</div>
+    <div class="contents">
+        <p>Who Was Saint Wilgefortis?</p>
+        <p>Saint or Symbol? Wilgefortis and Gender</p>
+        <p>Wilgefortis in Art, Devotion, and in today's world</p>
+        <p>Poetry Piece</p>
+        <p>Creators Statement</p>
+        <p>Works Cited</p>
+    </div>
+</div>
+<a href="Whomst.html" class="nav-button next-button">&#8594;</a>
+</body>
+</html>

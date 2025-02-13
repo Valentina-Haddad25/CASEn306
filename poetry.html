@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poetry Piece</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: black;
+      color: white;
+      font-family: 'Garamond', serif;
+      position: relative;
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+    }
+    .zine-container {
+      width: 50%;
+      max-width: 800px;
+      padding: 30px;
+      border: 3px solid white;
+      text-align: center;
+      box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .content {
+      font-size: 22px;
+      line-height: 1.8;
+      text-align: center;
+    }
+    .content h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 25px;
+      text-decoration: underline;
+    }
+    .poetry-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 40px;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+    .poetry-piece {
+      font-size: 20px;
+      font-style: italic;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+    .nav-button {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .nav-button:hover {
+      color: gray;
+    }
+    .back-button {
+      left: 20px;
+    }
+    .next-button {
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="title">Poetry Piece</div>
+<a href="art.html" class="nav-button back-button">&#8592;</a>
+<div class="zine-container">
+  <div class="content">
+    <div class="poetry-title">The Blessed Transformation</div>
+    <p class="poetry-piece">
+      A crown, <br>
+      A cross, <br>
+      A twisted fate, <br>
+      A woman's form, yet not innate. <br>
+      Her prayers were answered, <br>
+      Face transformed. <br>
+      A beard, a blessing.
+    </p>
+  </div>
+</div>
+<a href="creatorS.html" class="nav-button next-button">&#8594;</a>
+</body>
+</html>
